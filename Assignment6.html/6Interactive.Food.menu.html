@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Restaurant Menu</title>
+</head>
+
+<body>
+
+    <h1>Interactive Restaurant Menu</h1>
+
+    <p>Click on any food item to see more information.</p>
+
+    <img src="https://th.bing.com/th/id/OIG2.I7Eb9Rc7CFPz8mFLvmHw?pid=ImgGn" 
+         alt="Restaurant Food Menu"
+         usemap="#foodmap"
+         width="800">
+
+    <map name="foodmap">
+
+        <area shape="circle"
+              coords="150,150,70"
+              href="https://www.dominos.co.in/menu/pizza"
+              alt="Pizza"
+              target="_blank">
+   
+        <area shape="circle"
+              coords="400,150,70"
+              href="https://www.mcdonalds.com/menu/burgers"
+              alt="Burger"
+              target="_blank">
+
+        <!-- French Fries - Rectangle -->
+        <area shape="rect"
+              coords="50,300,250,450"
+              href="https://www.mcdonalds.com/menu/fries"
+              alt="French Fries"
+              target="_blank">
+
+        <!-- Menu Card - Rectangle -->
+        <area shape="rect"
+              coords="550,300,750,450"
+              href="https://www.dominos.co.in/menu"
+              alt="Menu Card"
+              target="_blank">
+
+        <!-- Sandwich - Polygon -->
+        <area shape="poly"
+              coords="300,300,400,270,500,320,450,420,350,400"
+              href="https://www.subway.com/menu/sandwiches"
+              alt="Sandwich"
+              target="_blank">
+
+        <!-- Cake Slice - Polygon -->
+        <area shape="poly"
+              coords="550,100,650,80,720,180,600,220"
+              href="https://www.bakingo.com/cakes/chandigarh"
+              alt="Cake Slice"
+              target="_blank">
+
+        <!-- Remaining Area - Default -->
+        <area shape="default"
+              href="https://www.bakingo.com/cakes/chandigarh"
+              alt="Other Area">
+
+    </map>
+
+</body>
+</html>

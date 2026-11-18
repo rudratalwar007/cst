@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Explorer</title>
+</head>
+<body>
+    <h1>World Map Explorer</h1>
+
+    <p>Click a continent on the map to learn more about it.</p>
+    <p>The clickable areas link to Asia, Australia, South America, and North America.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/BlankMap-Equirectangular.svg/960px-BlankMap-Equirectangular.svg.png"
+         alt="World map" width="960" height="480" usemap="#worldmap">
+
+    <map name="worldmap">
+        <area shape="rect" coords="550,100,850,250"
+              href="https://en.wikipedia.org/wiki/Asia"
+              alt="Asia" target="_blank">
+
+        <area shape="circle" coords="390,300,80"
+              href="https://en.wikipedia.org/wiki/South_America"
+              alt="South America" target="_blank">
+
+        <area shape="poly" coords="730,320,810,320,850,370,820,410,770,400,740,370"
+              href="https://en.wikipedia.org/wiki/Australia_(continent)"
+              alt="Australia" target="_blank">
+
+        <area shape="default"
+              href="https://en.wikipedia.org/wiki/India"
+              alt="Other map areas - India" target="_blank">
+    </map>
+</body>
+</html>
